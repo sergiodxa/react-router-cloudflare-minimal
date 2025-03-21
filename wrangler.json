@@ -1,0 +1,12 @@
+{
+  "$schema": "https://unpkg.com/wrangler@latest/config-schema.json",
+  "name": "react-router-cloudflare",
+  "main": "./app/entry.worker.ts",
+  "compatibility_date": "2025-02-20",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "dev": { "port": 3000 },
+  "placement": { "mode": "off" },
+  "observability": { "enabled": true },
+  "assets": { "directory": "./build/client" }
+}

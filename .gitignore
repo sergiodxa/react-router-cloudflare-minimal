@@ -1,6 +1,11 @@
-.DS_Store
-/node_modules/
+# Folders
+/node_modules
+/.cache
+/.react-router
+/.wrangler
+/coverage
+/build
 
-# React Router
-/.react-router/
-/build/
+# Files
+.DS_Store
+.dev.vars
