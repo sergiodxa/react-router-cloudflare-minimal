@@ -5,7 +5,6 @@
     "app/**/*",
     "app/**/.server/**/*",
     "app/**/.client/**/*",
-    "db/**/*",
     "react-router.config.ts"
   ],
   "compilerOptions": {
