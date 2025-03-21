@@ -40,6 +40,19 @@ bun run deploy
 
 This will init the deploy script of wrangler and guide you to deploy the application.
 
+### Using GitHub Actions
+
+This template includes a GitHub Actions workflow that will deploy your application to Cloudflare Workers when triggered.
+
+To use it you need to set the following secrets in your repository:
+
+- `CLOUDFLARE_API_TOKEN`
+- `CLOUDFLARE_ACCOUNT_ID`
+
+You can get the `CLOUDFLARE_API_TOKEN` from the Cloudflare dashboard and the `CLOUDFLARE_ACCOUNT_ID` from the wrangler configuration file.
+
+Then trigger the workflow by clicking on the "Actions" tab in your repository and running the "Deploy" workflow.
+
 ## Styling
 
 This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
