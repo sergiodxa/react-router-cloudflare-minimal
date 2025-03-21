@@ -9,3 +9,4 @@
 # Files
 .DS_Store
 .dev.vars
+worker-configuration.d.ts
