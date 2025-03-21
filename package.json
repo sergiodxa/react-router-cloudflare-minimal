@@ -7,9 +7,10 @@
     "build": "vite build",
     "start": "vite preview",
     "deploy": "wrangler deploy",
-    "typecheck": "react-router typegen && tsc",
+    "typecheck": "bun rr:typegen && bun cf:typegen && tsc",
     "rr:typegen": "react-router typegen",
-    "rr:routes": "react-router routes"
+    "rr:routes": "react-router routes",
+    "cf:typegen": "wrangler types"
   },
   "dependencies": {
     "@react-router/cloudflare": "^7.4.0",
