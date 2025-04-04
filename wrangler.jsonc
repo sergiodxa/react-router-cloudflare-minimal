@@ -8,5 +8,12 @@
   "dev": { "port": 3000 },
   "placement": { "mode": "off" },
   "observability": { "enabled": true },
-  "assets": { "directory": "./build/client" }
+  "assets": { "directory": "./build/client" },
+  "kv_namespaces": [
+    {
+      "binding": "MY_KV",
+      "id": "YOUR_KV_ID",
+      "preview_id": "YOUR_KV_PREVIEW_ID"
+    }
+  ]
 }

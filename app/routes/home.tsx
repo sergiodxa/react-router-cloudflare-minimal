@@ -1,5 +1,6 @@
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
+import { getBindings } from "~/bindings";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -8,6 +9,18 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function Home() {
-  return <Welcome />;
+export async function loader({ context }: Route.LoaderArgs) {
+  let { MY_KV } = getBindings(context);
+  let value = await MY_KV.get("key");
+
+  if (!value) {
+    await MY_KV.put("key", "value");
+    value = "fallback";
+  }
+
+  return { value };
+}
+
+export default function Home({ loaderData }: Route.ComponentProps) {
+  return <Welcome value={loaderData.value} />;
 }

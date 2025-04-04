@@ -5,6 +5,7 @@
     "app/**/*",
     "app/**/.server/**/*",
     "app/**/.client/**/*",
+    "worker-configuration.d.ts",
     "react-router.config.ts"
   ],
   "compilerOptions": {

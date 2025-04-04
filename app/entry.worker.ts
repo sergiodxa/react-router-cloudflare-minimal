@@ -1,12 +1,12 @@
 import { createRequestHandler } from "react-router";
-
-// @ts-expect-error - no types
 import * as build from "virtual:react-router/server-build";
+import { CloudflareContext } from "./bindings";
 
 const handler = createRequestHandler(build);
 
 export default {
-  async fetch(request: Request) {
-    return await handler(request);
+  async fetch(request: Request, env: Cloudflare.Env) {
+    let context = new Map([[CloudflareContext, env]]);
+    return await handler(request, context);
   },
 };
