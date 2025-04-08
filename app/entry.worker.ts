@@ -1,6 +1,6 @@
 import { createRequestHandler } from "react-router";
 import * as build from "virtual:react-router/server-build";
-import { CloudflareContext } from "./bindings";
+import { CloudflareContext } from "./middleware/bindings.server";
 
 const handler = createRequestHandler(build);
 
