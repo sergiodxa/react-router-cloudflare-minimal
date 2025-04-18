@@ -1,6 +1,6 @@
 # Minimal React Router Cloudflare Workers Template
 
-This is a minimal template for building React applications with React Router and Cloudflare Workers. It includes server-side rendering, hot module replacement, and TypeScript by default.
+This is a minimal template for building React applications with React Router and Cloudflare Workers. It includes server-side rendering, hot module replacement, TypeScript, and middleware by default.
 
 ## Getting Started
 
