@@ -4,6 +4,16 @@ This is a minimal template for building React applications with React Router and
 
 ## Getting Started
 
+### Clone the Template
+
+The recommended way to clone this repo is using [degit](https://github.com/Rich-Harris/degit)
+
+```bash
+bunx degit sergiodxa/react-router-cloudflare-minimal my-app
+```
+
+After the repo is clonned, this will remove the `LICENSE` and `.github/FUNDING.yml` files, and the `.git` folder, so you will have a clean slate to start your project.
+
 ### Installation
 
 Install the dependencies:
