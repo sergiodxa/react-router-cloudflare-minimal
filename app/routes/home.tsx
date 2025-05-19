@@ -1,6 +1,6 @@
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
-import { getBindings, waitUntil } from "~/middleware/bindings.server";
+import { getBindings, waitUntil } from "~/middleware/cloudflare.server";
 
 export function meta({}: Route.MetaArgs) {
   return [

@@ -1,7 +1,7 @@
 import type { unstable_InitialContext } from "react-router";
 import { createRequestHandler } from "react-router";
 import * as build from "virtual:react-router/server-build";
-import { CloudflareContext } from "./middleware/bindings.server";
+import { CloudflareContext } from "./middleware/cloudflare.server";
 
 const handler = createRequestHandler(build);
 
