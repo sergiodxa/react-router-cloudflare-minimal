@@ -24,3 +24,10 @@ export function getRequestProperties(
 ): RequestInitCfProperties | undefined {
   return context.get(CloudflareContext).cf;
 }
+
+export function waitUntil<T>(
+  context: unstable_RouterContextProvider,
+  promise: Promise<T>
+) {
+  return getExecutionContext(context).waitUntil(promise);
+}

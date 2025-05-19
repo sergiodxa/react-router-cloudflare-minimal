@@ -1,6 +1,6 @@
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
-import { getBindings } from "~/middleware/bindings.server";
+import { getBindings, waitUntil } from "~/middleware/bindings.server";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -14,7 +14,7 @@ export async function loader({ context }: Route.LoaderArgs) {
   let value = await MY_KV.get("key");
 
   if (!value) {
-    await MY_KV.put("key", "value");
+    waitUntil(context, MY_KV.put("key", "value"));
     value = "fallback";
   }
 
