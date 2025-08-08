@@ -1,19 +1,22 @@
 import { isbot } from "isbot";
 import { renderToReadableStream } from "react-dom/server";
-import type { AppLoadContext, EntryContext } from "react-router";
+import type {
+  EntryContext,
+  unstable_RouterContextProvider,
+} from "react-router";
 import { ServerRouter } from "react-router";
 
 export default async function handleRequest(
   request: Request,
   status: number,
   headers: Headers,
-  routerContext: EntryContext,
-  _loadContext: AppLoadContext
+  entryContext: EntryContext,
+  _routerContext: unstable_RouterContextProvider
 ) {
   let userAgent = request.headers.get("user-agent");
 
   let stream = await renderToReadableStream(
-    <ServerRouter context={routerContext} url={request.url} />,
+    <ServerRouter context={entryContext} url={request.url} />,
     {
       signal: request.signal,
       onError(error) {
