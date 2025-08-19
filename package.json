@@ -29,7 +29,7 @@
     "@total-typescript/tsconfig": "^1.0.4",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
-    "tailwindcss": "^4.1.11",
+    "tailwindcss": "^4.1.12",
     "typescript": "^5.9.2",
     "vite": "^7.1.1",
     "vite-tsconfig-paths": "^5.1.4",
