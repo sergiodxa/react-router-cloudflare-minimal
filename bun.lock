@@ -4,7 +4,7 @@
     "": {
       "name": "react-router-cloudflare",
       "dependencies": {
-        "@react-router/cloudflare": "^7.8.1",
+        "@react-router/cloudflare": "^7.8.2",
         "@react-router/serve": "^7.8.0",
         "isbot": "^5.1.29",
         "react": "^19.1.1",
@@ -233,7 +233,7 @@
 
     "@poppinss/exception": ["@poppinss/exception@1.2.2", "", {}, "sha512-m7bpKCD4QMlFCjA/nKTs23fuvoVFoA83brRKmObCUNmi/9tVu8Ve3w4YQAnJu4q3Tjf5fr685HYIC/IA2zHRSg=="],
 
-    "@react-router/cloudflare": ["@react-router/cloudflare@7.8.1", "", { "peerDependencies": { "@cloudflare/workers-types": "^4.0.0", "react-router": "^7.8.1", "typescript": "^5.1.0" }, "optionalPeers": ["typescript"] }, "sha512-z/09bEWAMXoFnnQPLgn8l5wju7OikAzZgV/z2C3bEHgzguLbOM63NfNRur5EVz8hPwCB84cnRjCNa8THTK6OFQ=="],
+    "@react-router/cloudflare": ["@react-router/cloudflare@7.8.2", "", { "peerDependencies": { "@cloudflare/workers-types": "^4.0.0", "react-router": "^7.8.2", "typescript": "^5.1.0" }, "optionalPeers": ["typescript"] }, "sha512-ady/IqfnoMO4suS4c7PttacURoYQqHUpvGmKdtOT6YdrBdD3IhMjHzLpgyKcMmlGcPuj7XkoGmLFRvrPHDiSPQ=="],
 
     "@react-router/dev": ["@react-router/dev@7.8.0", "", { "dependencies": { "@babel/core": "^7.27.7", "@babel/generator": "^7.27.5", "@babel/parser": "^7.27.7", "@babel/plugin-syntax-jsx": "^7.27.1", "@babel/preset-typescript": "^7.27.1", "@babel/traverse": "^7.27.7", "@babel/types": "^7.27.7", "@npmcli/package-json": "^4.0.1", "@react-router/node": "7.8.0", "@vitejs/plugin-react": "^4.5.2", "@vitejs/plugin-rsc": "0.4.11", "arg": "^5.0.1", "babel-dead-code-elimination": "^1.0.6", "chokidar": "^4.0.0", "dedent": "^1.5.3", "es-module-lexer": "^1.3.1", "exit-hook": "2.2.1", "isbot": "^5.1.11", "jsesc": "3.0.2", "lodash": "^4.17.21", "pathe": "^1.1.2", "picocolors": "^1.1.1", "prettier": "^3.6.2", "react-refresh": "^0.14.0", "semver": "^7.3.7", "set-cookie-parser": "^2.6.0", "tinyglobby": "^0.2.14", "valibot": "^0.41.0", "vite-node": "^3.2.2" }, "peerDependencies": { "@react-router/serve": "^7.8.0", "react-router": "^7.8.0", "typescript": "^5.1.0", "vite": "^5.1.0 || ^6.0.0 || ^7.0.0", "wrangler": "^3.28.2 || ^4.0.0" }, "optionalPeers": ["@react-router/serve", "typescript", "wrangler"], "bin": { "react-router": "bin.js" } }, "sha512-5NA9yLZComM+kCD3zNPL3rjrAFjzzODY8hjAJlpz/6jpyXoF28W8QTSo8rxc56XVNLONM75Y5nq1wzeEcWFFKA=="],
 
