@@ -24,7 +24,7 @@
     "@cloudflare/vite-plugin": "^1.13.10",
     "@cloudflare/workers-types": "^4.20251011.0",
     "@react-router/dev": "^7.9.3",
-    "@tailwindcss/vite": "^4.1.13",
+    "@tailwindcss/vite": "^4.1.14",
     "@total-typescript/ts-reset": "^0.6.1",
     "@total-typescript/tsconfig": "^1.0.4",
     "@types/react": "^19.2.0",
