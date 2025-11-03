@@ -13,7 +13,7 @@
     "cf:typegen": "wrangler types"
   },
   "dependencies": {
-    "@react-router/cloudflare": "^7.9.3",
+    "@react-router/cloudflare": "^7.9.5",
     "@react-router/serve": "^7.9.4",
     "isbot": "^5.1.31",
     "react": "^19.2.0",
